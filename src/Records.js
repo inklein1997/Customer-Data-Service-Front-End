@@ -61,6 +61,8 @@ function Records() {
       case "delete":
         setCustomers(customers.filter((e) => e.id !== customer.id));
         break;
+      default:
+        console.error("Unable to process request");
     }
 
     setError("");
